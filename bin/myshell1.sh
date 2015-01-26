@@ -1,4 +1,12 @@
 #/bin/bash
+function createFile(){
+	if [ ! -f $1 ]; then
+		touch $1
+	else
+		echo "文件$1已存在"
+	fi
+}
+
 PATH=$PATH
 export PATH
 
@@ -12,6 +20,7 @@ date3=$(date -d "+2 day" +%Y%m%d)
 
 cd sql
 
-touch ${tempName}${date1}.sql
-touch ${tempName}${date2}.sql
-touch ${tempName}${date3}.sql
+createFile ${tempName}${date1}.sql;
+createFile ${tempName}${date2}.sql;
+createFile ${tempName}${date3}.sql;
+
