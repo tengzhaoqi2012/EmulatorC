@@ -10,6 +10,8 @@ function createFile(){
 PATH=$PATH
 export PATH
 
+echo $1
+
 echo "程序会用touch命令自动创建三个文件"
 
 read -p "请输入文件名的前缀:" tempName
