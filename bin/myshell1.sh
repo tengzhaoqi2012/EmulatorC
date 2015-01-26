@@ -20,6 +20,7 @@ date3=$(date -d "+2 day" +%Y%m%d)
 
 cd sql
 
+##创建三个sql脚本文件
 createFile ${tempName}${date1}.sql;
 createFile ${tempName}${date2}.sql;
 createFile ${tempName}${date3}.sql;
