@@ -1,4 +1,5 @@
 #/bin/bash
+./compile.sh
 echo "开始执行程序"
 cd ..
 ./main
