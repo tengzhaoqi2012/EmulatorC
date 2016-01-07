@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "c5.h"
 #include "calc.h"
 int main(){
 	printf("please select:\n");
