@@ -4,4 +4,4 @@ cd ..
 ./main
 cd bin
 
-echo "\n执行程序结束"
+echo "执行程序结束"
