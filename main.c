@@ -7,15 +7,11 @@ int main(){
 	printf("1:test1\n");
 	printf("2:test2\n");
 	scanf("%s", input);
-	printf("you selected:%s\n", input);
 	if(!isDigit(input)) {
-		printf("not digit");	
+		printf("your select is wrong,please select again\n");	
 	}else {
-		printf("digit");
+		printf("input successfully,ok");
 	}
-	
-	//func5();
-	//int c = calc(23, 35);
 }
 
 int isDigit(char* str) {

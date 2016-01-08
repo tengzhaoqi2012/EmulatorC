@@ -1,8 +1,6 @@
 #/bin/bash
-./compile.sh
-echo "开始执行程序"
+#./compile.sh
 cd ..
 ./main
 cd bin
 
-echo "执行程序结束"
