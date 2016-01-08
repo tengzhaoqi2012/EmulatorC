@@ -21,7 +21,7 @@ int doselect(){
         printf("your select is wrong,please select again\n");
 	return 0;
     }else {
-        printf("input successfully,ok");
+        printf("input successfully,ok\n");
 	return 1;
     }
 }
