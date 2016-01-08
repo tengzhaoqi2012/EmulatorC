@@ -2,16 +2,28 @@
 #include <string.h>
 #include "calc.h"
 int main(){
-	char input[10];
-	printf("please select:\n");
-	printf("1:test1\n");
-	printf("2:test2\n");
-	scanf("%s", input);
-	if(!isDigit(input)) {
-		printf("your select is wrong,please select again\n");	
-	}else {
-		printf("input successfully,ok");
-	}
+    int select=0;
+    while(1){
+	select = doselect();
+	if(select > 0) {
+	   break; 
+ 	}
+    }
+}
+
+int doselect(){
+    char input[10];
+    printf("please select:\n");
+    printf("1:test1\n");
+    printf("2:test2\n");
+    scanf("%s", input);
+    if(!isDigit(input)) {
+        printf("your select is wrong,please select again\n");
+	return 0;
+    }else {
+        printf("input successfully,ok");
+	return 1;
+    }
 }
 
 int isDigit(char* str) {
