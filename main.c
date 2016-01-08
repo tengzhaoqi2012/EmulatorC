@@ -5,9 +5,9 @@ int main(){
     int select=0;
     while(1){
 	select = doselect();
-	if(select > 0) {
-	   break; 
- 	}
+		if(select > 0) {
+		   break; 
+	 	}
     }
 }
 
@@ -19,10 +19,10 @@ int doselect(){
     scanf("%s", input);
     if(!isDigit(input)) {
         printf("your select is wrong,please select again\n");
-	return 0;
+		return 0;
     }else {
         printf("input successfully,ok\n");
-	return 1;
+		return 1;
     }
 }
 
@@ -50,3 +50,6 @@ int isDigit(char* str) {
 	}
 	return 0;
 }
+
+
+
