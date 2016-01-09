@@ -16,6 +16,7 @@ int main(){
 int appendFile(char* f, char* content) {
 	printf("target file is : %s\n", f);
 	printf("content is : %s\n", content);
+	return 1;
 }
 
 int doselect(){
