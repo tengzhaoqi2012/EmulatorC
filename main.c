@@ -10,12 +10,12 @@ int main(){
 	 	}
     }
 
-	appendFile("/hello", "ÖÐ¹ú,");
+	appendFile("/hello", "china");
 }
 
 int appendFile(char* f, char* content) {
-	printf("target file is : %s", f);
-	printf("content is : %s", content);
+	printf("target file is : %s\n", f);
+	printf("content is : %s\n", content);
 }
 
 int doselect(){
