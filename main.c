@@ -9,6 +9,13 @@ int main(){
 		   break; 
 	 	}
     }
+
+	appendFile("/hello", "ÖÐ¹ú,");
+}
+
+int appendFile(char* f, char* content) {
+	printf("target file is : %s", f);
+	printf("content is : %s", content);
 }
 
 int doselect(){
