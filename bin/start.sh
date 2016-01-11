@@ -1,6 +1,6 @@
 #/bin/bash
 #./compile.sh
 cd ..
-./main
+./main aaa bbb ccc
 cd bin
 
